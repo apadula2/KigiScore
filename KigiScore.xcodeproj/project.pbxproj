@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7FB8A621DAABD5C0017620B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB8A611DAABD5C0017620B /* AppDelegate.swift */; };
+		D7FB8A641DAABD5C0017620B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB8A631DAABD5C0017620B /* ViewController.swift */; };
+		D7FB8A671DAABD5C0017620B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FB8A651DAABD5C0017620B /* Main.storyboard */; };
+		D7FB8A691DAABD5C0017620B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FB8A681DAABD5C0017620B /* Assets.xcassets */; };
+		D7FB8A6C1DAABD5C0017620B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FB8A6A1DAABD5C0017620B /* LaunchScreen.storyboard */; };
+		D7FB8A771DAABD5C0017620B /* KigiScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB8A761DAABD5C0017620B /* KigiScoreTests.swift */; };
+		D7FB8A821DAABD5C0017620B /* KigiScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB8A811DAABD5C0017620B /* KigiScoreUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7FB8A731DAABD5C0017620B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7FB8A561DAABD5B0017620B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7FB8A5D1DAABD5C0017620B;
+			remoteInfo = KigiScore;
+		};
+		D7FB8A7E1DAABD5C0017620B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7FB8A561DAABD5B0017620B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7FB8A5D1DAABD5C0017620B;
+			remoteInfo = KigiScore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7FB8A5E1DAABD5C0017620B /* KigiScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KigiScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB8A611DAABD5C0017620B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7FB8A631DAABD5C0017620B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7FB8A661DAABD5C0017620B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7FB8A681DAABD5C0017620B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7FB8A6B1DAABD5C0017620B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7FB8A6D1DAABD5C0017620B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7FB8A721DAABD5C0017620B /* KigiScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KigiScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB8A761DAABD5C0017620B /* KigiScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KigiScoreTests.swift; sourceTree = "<group>"; };
+		D7FB8A781DAABD5C0017620B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7FB8A7D1DAABD5C0017620B /* KigiScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KigiScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB8A811DAABD5C0017620B /* KigiScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KigiScoreUITests.swift; sourceTree = "<group>"; };
+		D7FB8A831DAABD5C0017620B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7FB8A5B1DAABD5C0017620B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB8A6F1DAABD5C0017620B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB8A7A1DAABD5C0017620B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7FB8A551DAABD5B0017620B = {
+			isa = PBXGroup;
+			children = (
+				D7FB8A601DAABD5C0017620B /* KigiScore */,
+				D7FB8A751DAABD5C0017620B /* KigiScoreTests */,
+				D7FB8A801DAABD5C0017620B /* KigiScoreUITests */,
+				D7FB8A5F1DAABD5C0017620B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7FB8A5F1DAABD5C0017620B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB8A5E1DAABD5C0017620B /* KigiScore.app */,
+				D7FB8A721DAABD5C0017620B /* KigiScoreTests.xctest */,
+				D7FB8A7D1DAABD5C0017620B /* KigiScoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7FB8A601DAABD5C0017620B /* KigiScore */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB8A611DAABD5C0017620B /* AppDelegate.swift */,
+				D7FB8A631DAABD5C0017620B /* ViewController.swift */,
+				D7FB8A651DAABD5C0017620B /* Main.storyboard */,
+				D7FB8A681DAABD5C0017620B /* Assets.xcassets */,
+				D7FB8A6A1DAABD5C0017620B /* LaunchScreen.storyboard */,
+				D7FB8A6D1DAABD5C0017620B /* Info.plist */,
+			);
+			path = KigiScore;
+			sourceTree = "<group>";
+		};
+		D7FB8A751DAABD5C0017620B /* KigiScoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB8A761DAABD5C0017620B /* KigiScoreTests.swift */,
+				D7FB8A781DAABD5C0017620B /* Info.plist */,
+			);
+			path = KigiScoreTests;
+			sourceTree = "<group>";
+		};
+		D7FB8A801DAABD5C0017620B /* KigiScoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB8A811DAABD5C0017620B /* KigiScoreUITests.swift */,
+				D7FB8A831DAABD5C0017620B /* Info.plist */,
+			);
+			path = KigiScoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7FB8A5D1DAABD5C0017620B /* KigiScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FB8A861DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScore" */;
+			buildPhases = (
+				D7FB8A5A1DAABD5C0017620B /* Sources */,
+				D7FB8A5B1DAABD5C0017620B /* Frameworks */,
+				D7FB8A5C1DAABD5C0017620B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KigiScore;
+			productName = KigiScore;
+			productReference = D7FB8A5E1DAABD5C0017620B /* KigiScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7FB8A711DAABD5C0017620B /* KigiScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FB8A891DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScoreTests" */;
+			buildPhases = (
+				D7FB8A6E1DAABD5C0017620B /* Sources */,
+				D7FB8A6F1DAABD5C0017620B /* Frameworks */,
+				D7FB8A701DAABD5C0017620B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7FB8A741DAABD5C0017620B /* PBXTargetDependency */,
+			);
+			name = KigiScoreTests;
+			productName = KigiScoreTests;
+			productReference = D7FB8A721DAABD5C0017620B /* KigiScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7FB8A7C1DAABD5C0017620B /* KigiScoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FB8A8C1DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScoreUITests" */;
+			buildPhases = (
+				D7FB8A791DAABD5C0017620B /* Sources */,
+				D7FB8A7A1DAABD5C0017620B /* Frameworks */,
+				D7FB8A7B1DAABD5C0017620B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7FB8A7F1DAABD5C0017620B /* PBXTargetDependency */,
+			);
+			name = KigiScoreUITests;
+			productName = KigiScoreUITests;
+			productReference = D7FB8A7D1DAABD5C0017620B /* KigiScoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7FB8A561DAABD5B0017620B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Alexis Padula";
+				TargetAttributes = {
+					D7FB8A5D1DAABD5C0017620B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					D7FB8A711DAABD5C0017620B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7FB8A5D1DAABD5C0017620B;
+					};
+					D7FB8A7C1DAABD5C0017620B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7FB8A5D1DAABD5C0017620B;
+					};
+				};
+			};
+			buildConfigurationList = D7FB8A591DAABD5B0017620B /* Build configuration list for PBXProject "KigiScore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7FB8A551DAABD5B0017620B;
+			productRefGroup = D7FB8A5F1DAABD5C0017620B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7FB8A5D1DAABD5C0017620B /* KigiScore */,
+				D7FB8A711DAABD5C0017620B /* KigiScoreTests */,
+				D7FB8A7C1DAABD5C0017620B /* KigiScoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7FB8A5C1DAABD5C0017620B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FB8A6C1DAABD5C0017620B /* LaunchScreen.storyboard in Resources */,
+				D7FB8A691DAABD5C0017620B /* Assets.xcassets in Resources */,
+				D7FB8A671DAABD5C0017620B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB8A701DAABD5C0017620B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB8A7B1DAABD5C0017620B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7FB8A5A1DAABD5C0017620B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FB8A641DAABD5C0017620B /* ViewController.swift in Sources */,
+				D7FB8A621DAABD5C0017620B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB8A6E1DAABD5C0017620B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FB8A771DAABD5C0017620B /* KigiScoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB8A791DAABD5C0017620B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FB8A821DAABD5C0017620B /* KigiScoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7FB8A741DAABD5C0017620B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7FB8A5D1DAABD5C0017620B /* KigiScore */;
+			targetProxy = D7FB8A731DAABD5C0017620B /* PBXContainerItemProxy */;
+		};
+		D7FB8A7F1DAABD5C0017620B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7FB8A5D1DAABD5C0017620B /* KigiScore */;
+			targetProxy = D7FB8A7E1DAABD5C0017620B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7FB8A651DAABD5C0017620B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7FB8A661DAABD5C0017620B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7FB8A6A1DAABD5C0017620B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7FB8A6B1DAABD5C0017620B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7FB8A841DAABD5C0017620B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7FB8A851DAABD5C0017620B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7FB8A871DAABD5C0017620B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KigiScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.apadula2.KigiScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D7FB8A881DAABD5C0017620B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KigiScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.apadula2.KigiScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D7FB8A8A1DAABD5C0017620B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KigiScoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.apadula2.KigiScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KigiScore.app/KigiScore";
+			};
+			name = Debug;
+		};
+		D7FB8A8B1DAABD5C0017620B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KigiScoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.apadula2.KigiScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KigiScore.app/KigiScore";
+			};
+			name = Release;
+		};
+		D7FB8A8D1DAABD5C0017620B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KigiScoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.apadula2.KigiScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KigiScore;
+			};
+			name = Debug;
+		};
+		D7FB8A8E1DAABD5C0017620B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KigiScoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.elon.apadula2.KigiScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KigiScore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7FB8A591DAABD5B0017620B /* Build configuration list for PBXProject "KigiScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FB8A841DAABD5C0017620B /* Debug */,
+				D7FB8A851DAABD5C0017620B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FB8A861DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FB8A871DAABD5C0017620B /* Debug */,
+				D7FB8A881DAABD5C0017620B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7FB8A891DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FB8A8A1DAABD5C0017620B /* Debug */,
+				D7FB8A8B1DAABD5C0017620B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7FB8A8C1DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FB8A8D1DAABD5C0017620B /* Debug */,
+				D7FB8A8E1DAABD5C0017620B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7FB8A561DAABD5B0017620B /* Project object */;
+}
