@@ -31,8 +31,8 @@ class ViewController: UIViewController {
             
             func prepare( for segue: UIStoryboardSegue, sender: Any?){
                 if segue.identifier == "toScoreBoard"{
-                    let scoreBoardViewController = segue.destßination as! ScoreBoardViewController
-                    ScoreBoardViewController.game = KigiGame[playersInGame]
+                    let scoreBoardViewController = segue.destination as! ScoreBoardViewController
+                    scoreBoardViewController.players = playersInGame
                 
             }
         
@@ -43,5 +43,4 @@ class ViewController: UIViewController {
     }
 
 
-}
 

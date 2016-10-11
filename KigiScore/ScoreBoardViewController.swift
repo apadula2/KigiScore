@@ -40,7 +40,7 @@ class ScoreBoardViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     var tappedScore = 0
-    var game: KigiGame
+    var players: [Player]!
     
     
     
