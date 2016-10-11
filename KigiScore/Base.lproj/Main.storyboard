@@ -94,11 +94,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBf-Xz-xOn">
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="Eia-vz-Il2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Play!"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DTz-Kh-kmt" appends="YES" id="t2T-1i-j5Q"/>
+                                    <segue destination="zQY-q7-YOl" kind="show" identifier="toScoreBoard" id="DLY-nN-kob"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kigi Scorer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwO-ag-OD6">
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
@@ -156,17 +161,27 @@
                     </view>
                     <navigationItem key="navigationItem" id="cET-xG-ZcZ"/>
                     <connections>
-                        <segue destination="zQY-q7-YOl" kind="show" id="2wl-JI-dpQ"/>
+                        <outlet property="playButton" destination="dBf-Xz-xOn" id="Gwl-8M-gFy"/>
+                        <outlet property="player1" destination="Xcu-gn-rBC" id="ytp-5f-xo1"/>
+                        <outlet property="player2" destination="9se-Aj-YhD" id="2jR-Uq-DPq"/>
+                        <outlet property="player3" destination="gfa-7X-Rzh" id="hu2-XZ-CGD"/>
+                        <outlet property="player4" destination="eY3-Ck-LbA" id="1ho-SL-fN5"/>
+                        <outlet property="player5" destination="ZD1-Yj-T4Y" id="eou-bM-p5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DTz-Kh-kmt">
+                    <connections>
+                        <action selector="playButtonTap:" destination="BYZ-38-t0r" id="xhK-hu-oTz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1095" y="151.05633802816902"/>
         </scene>
-        <!--View Controller-->
+        <!--Score Board View Controller-->
         <scene sceneID="28W-WB-gJe">
             <objects>
-                <viewController id="zQY-q7-YOl" sceneMemberID="viewController">
+                <viewController id="zQY-q7-YOl" customClass="ScoreBoardViewController" customModule="KigiScore" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ka2-KS-KGN"/>
                         <viewControllerLayoutGuide type="bottom" id="KMg-ae-eNY"/>
@@ -175,6 +190,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-Ol-WDc"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bl-Oj-n6Q">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -192,27 +208,27 @@
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6NJ-Li-8Yl">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEU-2N-bI4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEU-2N-bI4">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFf-z5-gZi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFf-z5-gZi">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-QB-5bB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-QB-5bB">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l6-ET-K0H">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l6-ET-K0H">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V63-ZM-g4P">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V63-ZM-g4P">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -221,27 +237,27 @@
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lJK-r8-uaP">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIU-5n-ADc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIU-5n-ADc">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSz-tT-7aX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSz-tT-7aX">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-85-Y5S">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-85-Y5S">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cY-r9-oCE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cY-r9-oCE">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yQ-3Z-lGU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yQ-3Z-lGU">
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -251,82 +267,157 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="q5k-qi-odU">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd9-ZX-dxL">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="0"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Ulp-2m-ZnA" appends="YES" id="mCs-Gc-myn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSj-iI-tGN">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="1"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="K83-X7-Era" appends="YES" id="qYV-lw-9qj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-RB-MKc">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="2"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="seu-IB-z6D" appends="YES" id="HIe-IZ-09Z"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8i-zv-gb3">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="3"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5GX-Dr-gYA" appends="YES" id="iYV-jU-mUk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="9Uy-5j-AFQ">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeW-Zy-LaF">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="4"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="EAy-dE-rB3" appends="YES" id="xWc-eC-LEd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPQ-AO-77n">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="5"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="kL8-fb-2h3" appends="YES" id="Ehu-ix-Tja"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a34-Yn-Ec4">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="6"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pTd-zN-Wkl" appends="YES" id="Sjq-lz-9uL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkV-l2-b0F">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="7"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ylq-Ca-LN6" appends="YES" id="hun-gQ-fcs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="X9H-VH-tqk">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xw-dv-M53">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="8"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="CLH-VQ-pNs" appends="YES" id="Ixa-Bq-XXX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe7-vb-wmB">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="9"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="q04-5F-SoP" appends="YES" id="SP8-sC-hje"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcL-If-XDf">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="10"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="yN6-Hy-9xX" appends="YES" id="Zfd-Bm-1zQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyG-Sd-fxE">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="11"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="EOV-Xo-5zJ" appends="YES" id="QPN-sC-V5b"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuK-Io-OUk">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Rmv-te-exN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="12"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JkF-VA-UPh" appends="YES" id="JKV-S7-0jO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bij-QV-K76">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="13"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="v86-ih-Umx" appends="YES" id="O0d-7c-oqi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Bij-QV-K76" secondAttribute="trailing" constant="33" id="1Mi-n0-nNm"/>
-                            <constraint firstItem="9Uy-5j-AFQ" firstAttribute="top" secondItem="lJK-r8-uaP" secondAttribute="bottom" constant="57.5" id="78V-MG-bSu"/>
-                            <constraint firstItem="X9H-VH-tqk" firstAttribute="top" secondItem="q5k-qi-odU" secondAttribute="bottom" constant="32" id="D7r-Ns-Vfv"/>
+                            <constraint firstItem="wkV-l2-b0F" firstAttribute="top" secondItem="q5k-qi-odU" secondAttribute="bottom" constant="4" id="23V-wU-bTi"/>
+                            <constraint firstItem="Hyy-Ol-WDc" firstAttribute="centerX" secondItem="mpB-bf-6UG" secondAttribute="centerX" id="2j8-I9-Hbf"/>
+                            <constraint firstItem="9Uy-5j-AFQ" firstAttribute="top" secondItem="lJK-r8-uaP" secondAttribute="bottom" constant="60" id="78V-MG-bSu"/>
+                            <constraint firstItem="Hyy-Ol-WDc" firstAttribute="top" secondItem="mpB-bf-6UG" secondAttribute="top" id="Ck6-4X-4bA"/>
+                            <constraint firstItem="X9H-VH-tqk" firstAttribute="top" secondItem="q5k-qi-odU" secondAttribute="bottom" constant="40" id="D7r-Ns-Vfv"/>
                             <constraint firstItem="6NJ-Li-8Yl" firstAttribute="top" secondItem="lJK-r8-uaP" secondAttribute="top" id="DAb-is-FFw"/>
                             <constraint firstItem="q5k-qi-odU" firstAttribute="leading" secondItem="1Jt-MH-FTr" secondAttribute="leadingMargin" constant="15" id="F2I-Xw-qeN"/>
+                            <constraint firstItem="KMg-ae-eNY" firstAttribute="top" secondItem="Hyy-Ol-WDc" secondAttribute="bottom" constant="12" id="GvP-mv-20n"/>
                             <constraint firstItem="6NJ-Li-8Yl" firstAttribute="top" secondItem="1Jt-MH-FTr" secondAttribute="top" constant="182" id="J5T-To-Iby"/>
                             <constraint firstItem="WVG-h7-cBZ" firstAttribute="leading" secondItem="5Bl-Oj-n6Q" secondAttribute="trailing" constant="74" id="LUU-Ye-ByN"/>
                             <constraint firstItem="9Uy-5j-AFQ" firstAttribute="trailing" secondItem="X9H-VH-tqk" secondAttribute="trailing" id="Lr7-3y-dol"/>
@@ -337,7 +428,9 @@
                             <constraint firstItem="mpB-bf-6UG" firstAttribute="centerX" secondItem="q5k-qi-odU" secondAttribute="centerX" constant="-7" id="RHa-YU-dkV"/>
                             <constraint firstItem="Bij-QV-K76" firstAttribute="leading" secondItem="AuK-Io-OUk" secondAttribute="trailing" constant="88" id="RXQ-tb-7eP"/>
                             <constraint firstItem="X9H-VH-tqk" firstAttribute="top" secondItem="9Uy-5j-AFQ" secondAttribute="bottom" id="Ubx-pe-fcc"/>
+                            <constraint firstItem="X9H-VH-tqk" firstAttribute="top" secondItem="9Uy-5j-AFQ" secondAttribute="bottom" constant="4" id="ZDy-Wo-eLI"/>
                             <constraint firstItem="5Bl-Oj-n6Q" firstAttribute="baseline" secondItem="WVG-h7-cBZ" secondAttribute="baseline" id="a2m-fM-Ifk"/>
+                            <constraint firstItem="cyG-Sd-fxE" firstAttribute="top" secondItem="wkV-l2-b0F" secondAttribute="bottom" constant="4" id="dFY-CQ-EqA"/>
                             <constraint firstItem="mpB-bf-6UG" firstAttribute="centerX" secondItem="1Jt-MH-FTr" secondAttribute="centerX" id="eTn-55-TMT"/>
                             <constraint firstItem="AuK-Io-OUk" firstAttribute="leading" secondItem="1Jt-MH-FTr" secondAttribute="leadingMargin" constant="47" id="ec8-17-4gk"/>
                             <constraint firstItem="mpB-bf-6UG" firstAttribute="top" secondItem="ka2-KS-KGN" secondAttribute="bottom" constant="8" symbolic="YES" id="feP-1N-jfU"/>
@@ -347,10 +440,107 @@
                             <constraint firstItem="KMg-ae-eNY" firstAttribute="top" secondItem="AuK-Io-OUk" secondAttribute="bottom" constant="20" id="pjY-JZ-fPA"/>
                             <constraint firstItem="6NJ-Li-8Yl" firstAttribute="leading" secondItem="1Jt-MH-FTr" secondAttribute="leadingMargin" constant="30" id="ucP-I3-tP7"/>
                             <constraint firstItem="AuK-Io-OUk" firstAttribute="top" secondItem="X9H-VH-tqk" secondAttribute="bottom" constant="7" id="vgO-z1-c2f"/>
+                            <constraint firstItem="Hyy-Ol-WDc" firstAttribute="leading" secondItem="1Jt-MH-FTr" secondAttribute="leadingMargin" id="xgq-iY-mdA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Button0" destination="Gd9-ZX-dxL" id="q7X-93-AFa"/>
+                        <outlet property="Button1" destination="OSj-iI-tGN" id="NOQ-7T-Sbu"/>
+                        <outlet property="Button10" destination="FcL-If-XDf" id="jgr-MY-dJr"/>
+                        <outlet property="Button11" destination="cyG-Sd-fxE" id="Ywj-BH-8Zk"/>
+                        <outlet property="Button12" destination="AuK-Io-OUk" id="5Tq-nR-cY7"/>
+                        <outlet property="Button13" destination="Bij-QV-K76" id="gDg-fk-Fdv"/>
+                        <outlet property="Button2" destination="LWG-RB-MKc" id="F39-R2-Rj6"/>
+                        <outlet property="Button3" destination="n8i-zv-gb3" id="5aH-FC-TOu"/>
+                        <outlet property="Button4" destination="oeW-Zy-LaF" id="Lgh-1E-iHr"/>
+                        <outlet property="Button5" destination="bPQ-AO-77n" id="vOz-ga-6NH"/>
+                        <outlet property="Button6" destination="a34-Yn-Ec4" id="EPe-Ol-PhZ"/>
+                        <outlet property="Button7" destination="wkV-l2-b0F" id="ifH-Ge-fUg"/>
+                        <outlet property="Button8" destination="6xw-dv-M53" id="UZ2-Oh-IAo"/>
+                        <outlet property="Button9" destination="qe7-vb-wmB" id="76x-3U-itE"/>
+                        <outlet property="Player5Score" destination="5yQ-3Z-lGU" id="zGW-fs-lPA"/>
+                        <outlet property="player1Label" destination="LEU-2N-bI4" id="zBt-7F-AsC"/>
+                        <outlet property="player1Score" destination="EIU-5n-ADc" id="sBV-Xg-flK"/>
+                        <outlet property="player2Label" destination="JFf-z5-gZi" id="Kzx-vk-YfH"/>
+                        <outlet property="player2Score" destination="gSz-tT-7aX" id="KE1-rg-hrS"/>
+                        <outlet property="player3Label" destination="v1c-QB-5bB" id="u47-1v-kr0"/>
+                        <outlet property="player3Score" destination="Vhs-85-Y5S" id="mea-f6-cUk"/>
+                        <outlet property="player4Label" destination="3l6-ET-K0H" id="cLi-9g-KUO"/>
+                        <outlet property="player4Score" destination="7cY-r9-oCE" id="Mna-MQ-vJ8"/>
+                        <outlet property="player5Label" destination="V63-ZM-g4P" id="YAA-Lt-BL9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzG-tl-c4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ulp-2m-ZnA">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="UDj-QU-U7j"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="K83-X7-Era">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="t4P-85-yrz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="seu-IB-z6D">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="RcK-vN-Nof"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5GX-Dr-gYA">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="stu-GM-6kQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ylq-Ca-LN6">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="C7M-K3-Es9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pTd-zN-Wkl">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="iaj-nt-Ovf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="kL8-fb-2h3">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="C23-tO-z7S"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="EAy-dE-rB3">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="dkH-iI-5i6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="EOV-Xo-5zJ">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="UhJ-K7-qzj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yN6-Hy-9xX">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="CVy-Ec-i4P"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="q04-5F-SoP">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="k7g-Lt-AuZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CLH-VQ-pNs">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="zLb-ra-fW4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="v86-ih-Umx">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="I91-wa-75y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JkF-VA-UPh">
+                    <connections>
+                        <action selector="scoreTap:" destination="zQY-q7-YOl" id="SIW-jD-fZ1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2023" y="152"/>
         </scene>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D789A3CC1DAD2D2B00D77709 /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789A3CB1DAD2D2B00D77709 /* ScoreBoardViewController.swift */; };
+		D789A3CE1DAD321A00D77709 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789A3CD1DAD321A00D77709 /* Player.swift */; };
+		D789A3D01DAD334D00D77709 /* KigiGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789A3CF1DAD334D00D77709 /* KigiGame.swift */; };
 		D7FB8A621DAABD5C0017620B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB8A611DAABD5C0017620B /* AppDelegate.swift */; };
 		D7FB8A641DAABD5C0017620B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB8A631DAABD5C0017620B /* ViewController.swift */; };
 		D7FB8A671DAABD5C0017620B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FB8A651DAABD5C0017620B /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D789A3CB1DAD2D2B00D77709 /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
+		D789A3CD1DAD321A00D77709 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D789A3CF1DAD334D00D77709 /* KigiGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KigiGame.swift; sourceTree = "<group>"; };
 		D7FB8A5E1DAABD5C0017620B /* KigiScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KigiScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FB8A611DAABD5C0017620B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7FB8A631DAABD5C0017620B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				D7FB8A681DAABD5C0017620B /* Assets.xcassets */,
 				D7FB8A6A1DAABD5C0017620B /* LaunchScreen.storyboard */,
 				D7FB8A6D1DAABD5C0017620B /* Info.plist */,
+				D789A3CB1DAD2D2B00D77709 /* ScoreBoardViewController.swift */,
+				D789A3CD1DAD321A00D77709 /* Player.swift */,
+				D789A3CF1DAD334D00D77709 /* KigiGame.swift */,
 			);
 			path = KigiScore;
 			sourceTree = "<group>";
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D789A3CE1DAD321A00D77709 /* Player.swift in Sources */,
+				D789A3D01DAD334D00D77709 /* KigiGame.swift in Sources */,
 				D7FB8A641DAABD5C0017620B /* ViewController.swift in Sources */,
+				D789A3CC1DAD2D2B00D77709 /* ScoreBoardViewController.swift in Sources */,
 				D7FB8A621DAABD5C0017620B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +509,7 @@
 				D7FB8A881DAABD5C0017620B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7FB8A891DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScoreTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +518,7 @@
 				D7FB8A8B1DAABD5C0017620B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7FB8A8C1DAABD5C0017620B /* Build configuration list for PBXNativeTarget "KigiScoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +527,7 @@
 				D7FB8A8E1DAABD5C0017620B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
