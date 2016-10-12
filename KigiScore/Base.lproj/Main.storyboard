@@ -101,7 +101,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Play!"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="DTz-Kh-kmt" appends="YES" id="t2T-1i-j5Q"/>
                                     <segue destination="zQY-q7-YOl" kind="show" identifier="toScoreBoard" id="DLY-nN-kob"/>
                                 </connections>
                             </button>
@@ -161,7 +160,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cET-xG-ZcZ"/>
                     <connections>
-                        <outlet property="playButton" destination="dBf-Xz-xOn" id="Gwl-8M-gFy"/>
+                        <outlet property="playButton" destination="dBf-Xz-xOn" id="riv-A4-3yp"/>
                         <outlet property="player1" destination="Xcu-gn-rBC" id="ytp-5f-xo1"/>
                         <outlet property="player2" destination="9se-Aj-YhD" id="2jR-Uq-DPq"/>
                         <outlet property="player3" destination="gfa-7X-Rzh" id="hu2-XZ-CGD"/>
@@ -170,11 +169,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="DTz-Kh-kmt">
-                    <connections>
-                        <action selector="playButtonTap:" destination="BYZ-38-t0r" id="xhK-hu-oTz"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1095" y="151.05633802816902"/>
         </scene>
@@ -272,6 +266,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="0"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="F86-Yp-5UA"/>
                                             <outletCollection property="gestureRecognizers" destination="Ulp-2m-ZnA" appends="YES" id="mCs-Gc-myn"/>
                                         </connections>
                                     </button>
@@ -281,6 +276,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="1"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="J9U-Dx-aNB"/>
                                             <outletCollection property="gestureRecognizers" destination="K83-X7-Era" appends="YES" id="qYV-lw-9qj"/>
                                         </connections>
                                     </button>
@@ -290,6 +286,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="2"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="9a5-4W-TSE"/>
                                             <outletCollection property="gestureRecognizers" destination="seu-IB-z6D" appends="YES" id="HIe-IZ-09Z"/>
                                         </connections>
                                     </button>
@@ -299,6 +296,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="3"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="pGO-1Z-8ga"/>
                                             <outletCollection property="gestureRecognizers" destination="5GX-Dr-gYA" appends="YES" id="iYV-jU-mUk"/>
                                         </connections>
                                     </button>
@@ -312,6 +310,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="4"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="iSP-xn-KqI"/>
                                             <outletCollection property="gestureRecognizers" destination="EAy-dE-rB3" appends="YES" id="xWc-eC-LEd"/>
                                         </connections>
                                     </button>
@@ -321,6 +320,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="5"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="Za7-m9-EIs"/>
                                             <outletCollection property="gestureRecognizers" destination="kL8-fb-2h3" appends="YES" id="Ehu-ix-Tja"/>
                                         </connections>
                                     </button>
@@ -330,6 +330,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="6"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="c9g-d7-93W"/>
                                             <outletCollection property="gestureRecognizers" destination="pTd-zN-Wkl" appends="YES" id="Sjq-lz-9uL"/>
                                         </connections>
                                     </button>
@@ -339,6 +340,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="7"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="ObZ-hh-bVX"/>
                                             <outletCollection property="gestureRecognizers" destination="ylq-Ca-LN6" appends="YES" id="hun-gQ-fcs"/>
                                         </connections>
                                     </button>
@@ -353,6 +355,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="8"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="oOl-3Y-EA7"/>
                                             <outletCollection property="gestureRecognizers" destination="CLH-VQ-pNs" appends="YES" id="Ixa-Bq-XXX"/>
                                         </connections>
                                     </button>
@@ -362,6 +365,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="9"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="wfA-Wl-Bq8"/>
                                             <outletCollection property="gestureRecognizers" destination="q04-5F-SoP" appends="YES" id="SP8-sC-hje"/>
                                         </connections>
                                     </button>
@@ -371,6 +375,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="10"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="Vol-gH-QRH"/>
                                             <outletCollection property="gestureRecognizers" destination="yN6-Hy-9xX" appends="YES" id="Zfd-Bm-1zQ"/>
                                         </connections>
                                     </button>
@@ -380,6 +385,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="11"/>
                                         <connections>
+                                            <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="koM-wE-0Bv"/>
                                             <outletCollection property="gestureRecognizers" destination="EOV-Xo-5zJ" appends="YES" id="QPN-sC-V5b"/>
                                         </connections>
                                     </button>
@@ -394,6 +400,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="12"/>
                                 <connections>
+                                    <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="ZPr-EY-dnU"/>
                                     <outletCollection property="gestureRecognizers" destination="JkF-VA-UPh" appends="YES" id="JKV-S7-0jO"/>
                                 </connections>
                             </button>
@@ -403,6 +410,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="13"/>
                                 <connections>
+                                    <action selector="pointsScored:" destination="zQY-q7-YOl" eventType="touchUpInside" id="ekF-t0-4RK"/>
                                     <outletCollection property="gestureRecognizers" destination="v86-ih-Umx" appends="YES" id="O0d-7c-oqi"/>
                                 </connections>
                             </button>
@@ -454,20 +462,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Button0" destination="Gd9-ZX-dxL" id="q7X-93-AFa"/>
-                        <outlet property="Button1" destination="OSj-iI-tGN" id="NOQ-7T-Sbu"/>
-                        <outlet property="Button10" destination="FcL-If-XDf" id="jgr-MY-dJr"/>
-                        <outlet property="Button11" destination="cyG-Sd-fxE" id="Ywj-BH-8Zk"/>
-                        <outlet property="Button12" destination="AuK-Io-OUk" id="5Tq-nR-cY7"/>
-                        <outlet property="Button13" destination="Bij-QV-K76" id="gDg-fk-Fdv"/>
-                        <outlet property="Button2" destination="LWG-RB-MKc" id="F39-R2-Rj6"/>
-                        <outlet property="Button3" destination="n8i-zv-gb3" id="5aH-FC-TOu"/>
-                        <outlet property="Button4" destination="oeW-Zy-LaF" id="Lgh-1E-iHr"/>
-                        <outlet property="Button5" destination="bPQ-AO-77n" id="vOz-ga-6NH"/>
-                        <outlet property="Button6" destination="a34-Yn-Ec4" id="EPe-Ol-PhZ"/>
-                        <outlet property="Button7" destination="wkV-l2-b0F" id="ifH-Ge-fUg"/>
-                        <outlet property="Button8" destination="6xw-dv-M53" id="UZ2-Oh-IAo"/>
-                        <outlet property="Button9" destination="qe7-vb-wmB" id="76x-3U-itE"/>
                         <outlet property="Player5Score" destination="5yQ-3Z-lGU" id="zGW-fs-lPA"/>
                         <outlet property="player1Label" destination="LEU-2N-bI4" id="zBt-7F-AsC"/>
                         <outlet property="player1Score" destination="EIU-5n-ADc" id="sBV-Xg-flK"/>

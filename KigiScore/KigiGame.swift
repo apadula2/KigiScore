@@ -16,7 +16,7 @@ class KigiGame{
     var numberOfPlayers: Int
     
     init(_ players:[Player]){
-        playerTurn=1
+        playerTurn=0
         self.players = players
         numberOfPlayers = players.count
         
@@ -29,7 +29,7 @@ class KigiGame{
             playerTurn+=1
         }
         else{
-            playerTurn=1
+            playerTurn=0
         }
         
         
