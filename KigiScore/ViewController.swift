@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     var players:[Player] = []
     var playersInGame:[Player] = []
     
+    //on click all names are put into an array as players with a score of 0 even if empty
+    //All active players are put into a seperate array
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let possiblePlayers = [player1,player2,player3,player4, player5]
         for possiblePlayer in possiblePlayers{
@@ -38,13 +40,14 @@ class ViewController: UIViewController {
                 players.append(player)
             }
         }
-        print("insegue")
+        // both arrays are passed to the second view
         if segue.identifier == "toScoreBoard"{
             let scoreBoardViewController = segue.destination as! ScoreBoardViewController
             scoreBoardViewController.players = players
-            scoreBoardViewController.numberOfPlayers = playersInGame.count
+            scoreBoardViewController.playersInGame = playersInGame
+            print(playersInGame.count)
         }
     }
 }
 
-   
+

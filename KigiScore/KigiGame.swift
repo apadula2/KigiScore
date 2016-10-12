@@ -22,10 +22,11 @@ class KigiGame{
         
     }
     
+    //when turn is taken, score is added to original score adn it is the next players turn
     func turn(_ turnScore:Int){
         players[playerTurn].score = players[playerTurn].score + turnScore
         
-        if playerTurn < numberOfPlayers{
+        if (playerTurn < numberOfPlayers-1){
             playerTurn+=1
         }
         else{
